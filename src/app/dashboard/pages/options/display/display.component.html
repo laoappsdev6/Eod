@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-lg-12">
+        <h6 class="">Pagination limit showing rows</h6>
+        <select [(ngModel)]="rowsLimit" [ngModelOptions]="{standalone:true}" name="" id=""
+            class="form-control col-2 mt-3" (change)="ChangeRowsLimit($event)">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="25">25</option>
+        </select>
+        <hr>
+        <h6>Themes</h6>
+        <p>comming soon ...</p>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+.list-container {
+
+    font-size: 14px;
+
+    .title {
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    .tap-detail {
+        font-size: 14px;
+    }
+
+    .input-search:focus {
+        box-shadow: none;
+    }
+
+    .page-item.active > .page-link {
+        background: #DC3545;
+        color: #fff;
+        border: 1px solid #DC3545;
+    }
+
+    .page-link {
+        color: #DC3545;
+    }
+}

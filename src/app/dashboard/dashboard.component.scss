@@ -1,0 +1,18 @@
+.app-container .app-main {
+    display: flex;
+    background: #fff;
+
+    .app-main-right {
+        margin-left: 230px;
+        width: 100%;
+        z-index: 100;
+
+        .content {
+            padding: 10px 0px;
+        }
+    }
+    
+    .app-main-right.lg {
+        margin-left: 0px;
+    }
+}

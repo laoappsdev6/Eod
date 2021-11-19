@@ -1,0 +1,18 @@
+<div class="app-container">
+    <main class="app-main">
+        <div class="app-main-left">
+            <app-sidebar [toggleState]="toggleState"></app-sidebar>
+        </div>
+        <div [ngClass]="toggleState ? 'app-main-right lg' : 'app-main-right'">
+
+            <header class="app-header">
+                <app-navbar (toggleAnimate)="Toggle($event)"></app-navbar>
+            </header>
+
+            <div class="content">
+                <router-outlet></router-outlet>
+            </div>
+
+        </div>
+    </main>
+</div>

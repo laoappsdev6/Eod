@@ -1,0 +1,42 @@
+<aside [ngClass]="toggleState ? 'sidebar-container hidden' : 'sidebar-container'">
+    <div class="logo">
+        <a href="javascript:void(0)" class="logo-link">
+            <span class="text-danger">e</span>
+            <span class="text-dark">Wallet</span>
+        </a>
+    </div>
+    <div class="text-section text-muted">Main</div>
+    <a href="javascript:void(0)" class="sidebar-link" (click)="RouterLinkToHome()">
+        <div class="icon">
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="text">Home</div>
+    </a>
+
+    <div class="line"></div>
+
+    <div class="text-section text-muted">Menu</div>
+    <a href="javascript:void(0)" class="sidebar-link" (click)="RouterLinkToIssue()">
+        <div class="icon">
+            <i class="fas fa-chalkboard"></i>
+        </div>
+        <div class="text">Issue Wallet</div>
+    </a>
+    <a href="javascript:void(0)" class="sidebar-link" (click)="RouterLinkToTransfer()">
+        <div class="icon">
+            <i class="fas fa-exchange-alt"></i>
+        </div>
+        <div class="text">Transfer Wallet</div>
+    </a>
+
+    <div class="line"></div>
+
+    <div class="text-section text-muted">More</div>
+    <a href="javascript:void(0)" class="sidebar-link" (click)="RouterLinkToOptions()">
+        <div class="icon">
+            <i class="fas fa-cogs"></i>
+        </div>
+        <div class="text">Options</div>
+    </a>
+
+</aside>
